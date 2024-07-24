@@ -1,0 +1,277 @@
+.header {
+    background-color: #f5f5f5;
+    padding: 10px 140px; /* Matching padding with the card container */
+    border-bottom: 0px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from the parent */
+}
+
+.header-title {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.new-post-button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from the parent */
+    font-color: black;
+    font-weight: bold;
+    width: 68px;
+    height: 22px;
+    text-align: center;
+    line-height: 24px;
+}
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-menu span {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.profile-menu span.active {
+    color: green;
+}
+
+.header-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px; /* Add padding between 트렌딩 and velog */
+    position: relative;
+    width: 100%;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+.menu-item.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    color: black;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-sort {
+    position: relative;
+}
+
+.sort-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #4A4A4A;
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.sort-button:hover {
+    background-color: #E2E6EA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort-button:focus {
+    outline: none;
+}
+
+.sort-button .text {
+    margin-right: 10px;
+}
+
+.sort-button .icon {
+    width: 12px;
+    height: 12px;
+    border: solid #4A4A4A;
+    border-width: 0 2px 2px 0;
+    margin-left: 10px;
+}
+
+
+
+
+/* Container for the three dots */
+.three-dots-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* The three dots themselves */
+.three-dots {
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Menu that appears when the three dots are clicked */
+.three-dots-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 200px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Each menu item */
+.three-dots-menu span {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e1e1;
+}
+.three-dots-menu p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Remove border for the last menu item */
+.three-dots-menu span:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for menu items */
+.three-dots-menu span:hover {
+    background: #f1f1f1;
+}
+
+/* Styling for the email link */
+
+
+/* Styling for the Powered by Stellate section */
+.three-dots-menu span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: #f9f9f9;
+    border-top: 1px solid #e1e1e1;
+}
+
+/* Sort button menu */
+.sort-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 200px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Each menu item */
+.sort-menu span {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Remove border for the last menu item */
+.sort-menu span:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for menu items */
+.sort-menu span:hover {
+    background: #f1f1f1;
+}
+
+/* Styling for the active menu item */
+.sort-menu span.active {
+    color: #1dc078; /* Green color for active item */
+    font-weight: bold;
+}

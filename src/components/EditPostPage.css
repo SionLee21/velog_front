@@ -1,0 +1,53 @@
+/* EditPostPage.css */
+
+.edit-post-page {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.edit-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-post-form input,
+.edit-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-post-form .form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+    background-color: #00c851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #007e33;
+}
+
+.cancel-button {
+    background-color: #ff4444;
+}
+
+.cancel-button:hover {
+    background-color: #cc0000;
+}

@@ -1,0 +1,153 @@
+/* PostPage.css */
+
+.post-page {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.post-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.post-description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.post-footer {
+    font-size: 16px;
+    color: #888;
+}
+
+.like-share-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.like-button,
+.share-button {
+    background-color: #00c851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.like-button:hover,
+.share-button:hover {
+    background-color: #007e33;
+}
+
+.share-message {
+    margin-top: 10px;
+    color: #00c851;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #00c851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #007e33;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    align-self: flex-end;
+    background-color: #00c851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #007e33;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #ffbb33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #ff8800;
+}
+
+.delete-button {
+    background-color: #ff4444;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+}
