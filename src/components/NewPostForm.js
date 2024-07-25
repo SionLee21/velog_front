@@ -6,7 +6,7 @@ import axios from 'axios';
 const NewPostForm = () => {
     const [title, setTitle] = useState('');
     const [tags, setTags] = useState('');
-    const [content, setContent] = useState('');
+    const [description, setDescription] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ const NewPostForm = () => {
         const newPost = {
             title,
             tags: tags.split(',').map(tag => tag.trim()),
-            content,
+            description,
             author: 'current_user', // Replace with actual author if available
             date: new Date().toISOString().split('T')[0],
             likes: 0,
@@ -48,17 +48,17 @@ const NewPostForm = () => {
                     className="tags-input"
                 />
                 <textarea
-                    value={content}
-                    onChange={(e) => setContent(e.target.value)}
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
                     placeholder="당신의 이야기를 적어보세요..."
-                    className="content-input"
+                    className="description-input"
                     required
                 />
                 <div className="form-actions">
                     <button type="button" className="cancel-button" onClick={() => navigate('/')}>나가기</button>
                     <div className="right-buttons">
                         <button type="button" className="save-button">임시저장</button>
-                        <button type="submit" className="submit-button" disabled={!title || !content}>출간하기</button>
+                        <button type="submit" className="submit-button" disabled={!title || !description}>출간하기</button>
                     </div>
                 </div>
             </form>
